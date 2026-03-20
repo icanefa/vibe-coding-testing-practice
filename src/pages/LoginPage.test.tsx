@@ -90,7 +90,7 @@ describe('LoginPage', () => {
             fireEvent.change(passwordInput, { target: { value: '12345678' } });
             fireEvent.click(submitButton);
 
-            expect(screen.getByText('密碼必須包含英文字母和數字')).toBeInTheDocument();
+            expect(screen.getByText('密碼必須包含ddddd英文字母和數字')).toBeInTheDocument();
 
             fireEvent.change(passwordInput, { target: { value: 'abcdefgh' } });
             fireEvent.click(submitButton);
